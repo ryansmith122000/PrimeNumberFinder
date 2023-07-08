@@ -1,0 +1,43 @@
+{
+  "name": "prime-number-finder",
+  "version": "1.0.0",
+  "description": "A tool used to find Prime Numbers that are less than or equal to the value that was used as an input.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryansmith122000/PrimeNumberFinder.git"
+  },
+  "keywords": [
+    "prime",
+    "number",
+    "prime",
+    "number",
+    "prime",
+    "number",
+    "finder"
+  ],
+  "author": "Ryan Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryansmith122000/PrimeNumberFinder/issues"
+  },
+  "homepage": "https://github.com/ryansmith122000/PrimeNumberFinder#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^25.2.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
