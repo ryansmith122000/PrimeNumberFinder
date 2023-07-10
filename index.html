@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <title>Hello from Electron renderer!</title>
-</head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'" />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'" />
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <title id="title">Prime Number Finder</title>
+  </head>
 
-<body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
-</body>
-<script src="./renderer.js"></script>
+  <body>
+    <h1>Find Prime Numbers</h1>
+    <p>Input a value and you will receive all prime numbers less than or equal to your input.</p>
+    <div>
+      <input
+        type="number"
+        id="inputNumber"
+        placeholder="Enter a number" />
+      <button id="findButton">Find Primes</button>
+      <button id="toggleButton">Toggle Color</button>
+      <button
+        id="stopButton"
+        disabled>
+        Stop Printing Numbers
+      </button>
+    </div>
+    <div>
+      <textarea
+        id="output"
+        rows="10"
+        cols="50"
+        readonly></textarea>
+    </div>
+    <p id="outputInfo"></p>
+    <p id="colorInfo"></p>
 
+    <script src="functionality/renderer.js"></script>
+    <!-- prints to the top of the browser window of the chrome, nodejs, electron version -->
+    <script src="functionality/primeNumbers.js"></script>
+    <!-- prime numbers execution, handles finding the prime numbers, outputting them, toggle colors button, and stop button. -->
+  </body>
 </html>
